@@ -9,8 +9,8 @@ class MyApp extends App {
       <Container>
         <Page>
           <Component />
+          {/* ^ I'll be the index.js and be replaced with whichever page you route to - need to be referenced in parent component by this.props.children*/}
         </Page>
-        {/* ^ I'll be the index.js and be replaced with whichever page you route to*/}
       </Container>
     );
   }
