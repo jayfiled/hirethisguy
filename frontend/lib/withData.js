@@ -1,5 +1,5 @@
-import withApollo from 'next-with-apollo';
-import ApolloClient from 'apollo-boost';
+import withApollo from 'next-with-apollo'; // <-- used to expose the client db 👇 to react, we need this because we are using next for SSR.
+import ApolloClient from 'apollo-boost'; // <-- the db that gets created in the client
 import { endpoint } from '../config';
 
 function createClient({ headers }) {
