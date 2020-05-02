@@ -7,4 +7,4 @@ const db = new Prisma({
     debug: false
 })
 
-export default db;
+module.exports = db;
